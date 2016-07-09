@@ -1,0 +1,96 @@
+#header {
+	background-color: #d42c2b;
+}
+
+#header h1 {
+	color: #fff;
+	font-family: "YouYuan";
+}
+
+#user-nav > ul {
+	border-left: 1px solid #d42c2b;
+	border-right: 1px solid #d42c2b;
+}
+
+#user-nav > ul > li > a {
+	color: #fff;
+}
+
+#user-nav > ul > li {
+	border-left: 1px solid #fff;
+	border-right: 1px solid #d42c2b;
+}
+
+#user-nav > ul > li > a:hover, #user-nav > ul > li.open > a {
+	background: #d65655;
+}
+
+#sidebar {
+	background: #ecedef;
+}
+
+#sidebar > ul {
+	border-bottom: 1px solid #ecedef;
+}
+
+#sidebar > ul > li > a {
+	color: #3c3d3f;
+}
+
+#sidebar > ul > li > a:hover {
+	background-color: #d93b3a; 
+	color:#fff;
+}
+#sidebar > ul > li {
+	border-top: 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+#sidebar .open > a {
+	background-color: #d93b3a;
+	color: #fff;
+}
+
+#sidebar > ul li ul {
+	background: #fff;
+}
+
+#sidebar > ul li ul li a {
+	background: #fff;
+	color: #606060;
+}
+
+#sidebar > ul li ul li a:hover {
+	color: #ff6978;
+	background: #fff;
+}
+
+#sidebar ul li ul li a{
+	display: inline-block;
+    width: 140px;
+    border-bottom: 1px dotted #a4a4a4;
+    margin-left: 18px;
+}
+
+#sidebar ul li ul li:last-child {
+	border-bottom: 0;
+}
+
+#sidebar > ul li ul li.active{
+	background: #fff;
+}
+
+#sidebar > ul li ul li.active a{
+	color: #ff6978;
+}
+
+.tab-li {
+	background: #e5e5e5;
+	color: #383838;
+}
+
+.tab-li-select {
+	background: #fff;
+	font-weight: normal;
+	color: #ff778f;
+}
