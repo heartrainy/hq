@@ -1,0 +1,103 @@
+/*avalon初始化前隐藏*/
+.ms-controller,.ms-important,[ms-controller],[ms-important]{
+     visibility: hidden;
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "YouYuan";
+	font-size: 14px; 
+}
+
+
+/*表格页面css*/
+
+.mycontainer {
+	padding: 0px 20px;
+}
+
+.mycontainer-title {
+	margin: 10px 0;
+}
+
+.mycontainer-title-icon {
+	margin-left: 10px;
+	color: #E37682;
+}
+
+.mycontainer-title-text {
+	color: #E37682;
+}
+
+.mycontainer-search {
+	background: #FAFAFA;
+}
+
+.mycontainer-search-row {
+	height: 35px;
+	line-height: 35px;
+	padding-left: 10px;
+	vertical-align: middle;
+}
+
+.mycontainer-search-btn {
+	text-align: right;
+	padding-bottom: 10px;
+    margin-right: 10px;
+}
+
+.search-text {
+	color: #5A5A5A;
+}
+
+.search-input {
+	height: 24px;
+	line-height: 24px;
+}
+
+.mycontainer-button {
+	height: 50px;
+	line-height: 50px;
+}
+
+table .able-a {
+	margin-left: 5px;
+	margin-right: 5px;
+	color: blue;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+table .unable-a {
+	margin-left: 5px;
+	margin-right: 5px;
+	color: #ccc;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/*dataTable修改css*/
+.tbb .dataTables_info {
+	float: left;
+}
+
+.tbb .dataTables_length {
+	float: left;
+	margin-top: 5px;
+    margin-left: 20px;
+}
+
+
+/*宽度集合*/
+.width200 {
+	width: 200px;
+}
+
+/*margin集合*/
+.mgl20 {
+	margin-left: 20px;
+}
