@@ -125,6 +125,10 @@ table .unable-a {
 	padding: 10px 0;
 }
 
+.form-btn {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 
 /*dataTableĞŞ¸Äcss*/
 .tbb .dataTables_info {
