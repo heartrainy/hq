@@ -119,7 +119,7 @@
 	                    <!-- <span class="label label-info">3</span> -->
 	                </a>
 	                <ul>
-	                    <li><a class="menu_a" link="${pageContext.request.contextPath}/client/static/gotoJsp?path=/web/sub/party/UMOM01.jsp" stitle="商品管理" tid="4"><i class="icon icon-caret-right"></i>商品管理</a></li>
+	                    <li><a class="menu_a" link="sub/base/product.html" stitle="商品管理" tid="4"><i class="icon icon-caret-right"></i>商品管理</a></li>
 	                    <li><a class="menu_a" link="${pageContext.request.contextPath}/client/static/gotoJsp?path=/web/sub/party/UMAM01.jsp" stitle="库区管理" tid="5"><i class="icon icon-caret-right"></i>库区管理</a></li>
 	                </ul>
 	            </li>
