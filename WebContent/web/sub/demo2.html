@@ -16,17 +16,18 @@
 	<div class="mycontainer-title">
 		<span class="mycontainer-title-icon"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></span>
 		<span class="mycontainer-title-text">添加客户信息</span>
+		<span class="mycontainer-title-return"><input class="btn btn-default btn-sm" type="button" value="返回" ms-click="returnBack" /></span>
 	</div>
 	
 	<table class="form-table">
 		<tr>
-			<td><span>报告人:</span></td>
+			<td width="70" align="right"><span><font class="red">*</font>报告人:</span></td>
 			<td><span><input type="text" class="form-input" /></span></td>
-			<td><span>主管:</span></td>
+			<td width="70" align="right"><span>主管:</span></td>
 			<td><span><input type="text" class="form-input" /></span></td>
-			<td><span>入单时间:</span></td>
+			<td width="70" align="right"><span>入单时间:</span></td>
 			<td><span><input type="text" class="form-input" /></span></td>
-			<td><span>进单渠道:</span></td>
+			<td width="70" align="right"><span>进单渠道:</span></td>
 			<td><span><input type="text" class="form-input" /></span></td>
 		</tr>
 	</table>
@@ -39,21 +40,21 @@
 	
 	<table class="form-table">
 		<tr>
-			<td><span>客户名称:</span></td>
+			<td width="70" align="right"><span><font class="red">*</font>客户名称:</span></td>
 			<td><span><input type="text" class="form-input" /></span></td>
-			<td><span>联系电话:</span></td>
+			<td width="70" align="right"><span>联系电话:</span></td>
 			<td><span><input type="text" class="form-input" /></span></td>
-			<td><span>QQ:</span></td>
+			<td width="70" align="right"><span>QQ:</span></td>
 			<td><span><input type="text" class="form-input" /></span></td>
-			<td><span>微信号:</span></td>
+			<td width="70" align="right"><span>微信号:</span></td>
 			<td><span><input type="text" class="form-input" /></span></td>
 		</tr>
 		<tr>
-			<td><span>婚宴日期:</span></td>
+			<td align="right"><span>婚宴日期:</span></td>
 			<td><span><input type="text" class="form-input" /></span></td>
-			<td><span>婚宴地点:</span></td>
+			<td align="right"><span>婚宴地点:</span></td>
 			<td colspan="3"><span><input type="text" class="form-input" /></span></td>
-			<td><span>婚礼桌数:</span></td>
+			<td align="right"><span>婚礼桌数:</span></td>
 			<td><span><input type="text" class="form-input" /></span></td>
 		</tr>
 	</table>
@@ -62,23 +63,23 @@
 	
 	<table class="form-table">
 		<tr>
-			<td><span>客户背景:</span></td>
-			<td><span><input type="text" class="form-input" /></span></td>
-			<td><span>家庭背景:</span></td>
-			<td><span><input type="text" class="form-input" /></span></td>
+			<td width="70" align="right"><span>客户背景:</span></td>
+			<td><span><input type="text" class="form-input wper60" /></span></td>
+			<td width="70" align="right"><span>家庭背景:</span></td>
+			<td><span><input type="text" class="form-input wper60" /></span></td>
 		</tr>
 		<tr>
-			<td><span>教育背景:</span></td>
-			<td><span><input type="text" class="form-input" /></span></td>
-			<td><span>特殊喜好:</span></td>
-			<td><span><input type="text" class="form-input" /></span></td>
+			<td align="right"><span>教育背景:</span></td>
+			<td><span><input type="text" class="form-input wper60" /></span></td>
+			<td align="right"><span>特殊喜好:</span></td>
+			<td><span><input type="text" class="form-input wper60" /></span></td>
 		</tr>
 		<tr>
-			<td><span>其他计划:</span></td>
-			<td colspan="3"><span><input type="text" class="form-input" /></span></td>
+			<td align="right"><span>其他信息:</span></td>
+			<td colspan="3"><span><input type="text" class="form-input wper81" /></span></td>
 		</tr>
 		<tr>
-			<td><span>生育计划:</span></td>
+			<td align="right"><span>生育计划:</span></td>
 			<td colspan="3"><span><input type="text" class="form-input" /></span></td>
 		</tr>
 	</table>
@@ -90,21 +91,46 @@
 	
 	<table class="form-table">
 		<tr>
-			<td><span>销售团队:</span></td>
+			<td width="70" align="right"><span>销售团队:</span></td>
 			<td><span><input type="text" class="form-input" /></span></td>
-			<td><span>大销售:</span></td>
+			<td width="70" align="right"><span>大销售:</span></td>
 			<td><span><input type="text" class="form-input" /></span></td>
-			<td><span>策划师:</span></td>
+			<td width="70" align="right"><span>策划师:</span></td>
 			<td><span><input type="text" class="form-input" /></span></td>
 		</tr>
 		<tr>
-			<td><span>婚礼风格:</span></td>
+			<td align="right"><span class="vertop">婚礼风格:</span></td>
 			<td colspan="5"><span><input type="text" class="form-input" /></span></td>
 		</tr>
 		<tr>
-			<td colspan="6"><span>衍生产品/销售可行性:</span><span><textarea /></span></td>
+			<td colspan="6"><span class="vertop mgl7">衍生产品/销售可行性:</span><span><textarea class="wper80"></textarea></span></td>
 		</tr>
 	</table>
+	
+	<div class="form-title">
+		<span class="form-title-icon"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span></span>
+		<span class="form-title-text">签单情况</span>
+	</div>
+	<table class="form-table">
+		<tr>
+			<td width="70"><span>跟踪状态:</span></td>
+			<td>
+				<span>
+					<select class="form-input">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+					</select>
+				</span>
+			</td>
+		</tr>
+	</table>
+	
+	<hr class="myhr"/>
+	
+	<div>
+		<input class="btn btn-danger btn-sm" type="button" value="保存" />
+	</div>
 	
 </div>
 

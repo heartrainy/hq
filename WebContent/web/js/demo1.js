@@ -68,7 +68,12 @@ var tableObj = $('#tableList').DataTable({
 });
 
 //avalon初始化
-var mv = avalon.define({
-	$id: "bodyController"
+window.mv = avalon.define({
+	$id: "bodyController",
+	showDialog: "main",
+	changeDialog: function(t) {
+		$("#subFrame").attr("src", "demo2.html");
+		mv.showDialog = t;
+	}
 });
 avalon.scan();
