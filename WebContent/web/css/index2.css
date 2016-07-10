@@ -121,6 +121,10 @@ table .unable-a {
 	padding-right: 10px;
 }
 
+.dimg {
+	padding: 10px 0;
+}
+
 
 /*dataTable修改css*/
 .tbb .dataTables_info {
@@ -139,6 +143,12 @@ table .unable-a {
 	margin-bottom: 5px;
 }
 
+/*layer修改*/
+.layui-layer-btn .layui-layer-btn0 {
+	background-color: #d9534f !important;
+    border-color: #d43f3a !important;
+    color: #fff !important;
+}
 
 /*宽度集合*/
 .width200 {

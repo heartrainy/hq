@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>入库管理</title>
+<title>商品管理</title>
 <link rel="stylesheet" href="../../../plugin/bootstrap/bootstrap-3.3.5.min.css" />
 <link rel="stylesheet" href="../../../plugin/datetimepicker/bootstrap-datetimepicker.min.css" />
 <link rel="stylesheet" href="../../../plugin/font-awesome/css/font-awesome.css" />
@@ -21,29 +21,21 @@
 	<!-- 查询条件 -->
 	<div class="mycontainer-search">
 		<div class="mycontainer-search-row">
-			<span class="search-text">入库单号</span>
+			<span class="search-text">商品名称</span>
 			<span class="search-input">
 				<input type="text" class="search-input width200" />
 			</span>
-			<span class="search-text mgl20">入库类型</span>
+			<span class="search-text mgl20">商品编号</span>
+			<span class="search-input">
+				<input type="text" class="search-input width200" />
+			</span>
+			<span class="search-text mgl20">商品类别</span>
 			<span class="search-input">
 				<select class="search-input width200">
-					<option>1</option>
-					<option>2</option>
-					<option>3</option>
+					<option value="0">全部</option>
+					<option value="1">电子相册</option>
+					<option value="2">会场布置</option>
 				</select>
-			</span>
-			<span class="search-text mgl20">经手人</span>
-			<span class="search-input">
-				<input type="text" class="search-input width200" />
-			</span>
-			<span class="search-text mgl20">入库时间</span>
-			<span class="search-input">
-				<input id="time1" type="text" class="search-input width200" />
-			</span>
-			-
-			<span class="search-input">
-				<input id="time2" type="text" class="search-input width200" />
 			</span>
 		</div>
 		<div class="mycontainer-search-btn">
@@ -54,8 +46,7 @@
 	
 	<!-- 表格操作按钮 -->
 	<div class="mycontainer-button">
-		<input class="btn btn-danger btn-sm" type="button" value="采购入库" ms-click="changeDialog('sub')" />
-		<input class="btn btn-default btn-sm" type="button" value="归还入库" />
+		<input class="btn btn-danger btn-sm" type="button" value="添加商品信息" ms-click="openAddDialog" />
 	</div>
 	
 	<!-- 表格 -->
@@ -73,7 +64,9 @@
 <script type="text/javascript" src="../../../plugin/datetimepicker/locales/bootstrap-datetimepicker.zh-CN.js"></script>
 <script type="text/javascript" src="../../../plugin/dataTables/jquery.dataTables-1.10.8.min.js"></script>
 <script type="text/javascript" src="../../../plugin/dataTables/dataTables.bootstrap-1.10.8.min.js"></script>
+<script type="text/javascript" src="../../../plugin/layer/layer.js"></script>
+<script type="text/javascript" src="../../js/common/clds.layer.js"></script>
 <script type="text/javascript" src="../../../plugin/avalon/avalon.js"></script>
-<script type="text/javascript" src="../../js/product.js"></script>
+<script type="text/javascript" src="../../js/base/product.js"></script>
 </body>
 </html>

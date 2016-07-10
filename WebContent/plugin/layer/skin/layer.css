@@ -26,6 +26,25 @@
  	background-position: 0 -70px;
  }
  
- .layui-layer-style1 .layui-layer-content{
+ /*
+ 自定义样式2
+ */
+ .layui-layer-style2{
+ 	border-radius: 4px;
+ }
+ 
+ .layui-layer-style2 .layui-layer-title{
+ 	border: none;
+ 	background-color: #d93b3a;
+ 	color: #fff;
+ 	font-weight: bold;
+ 	border-radius: 3px 3px 0 0;
+ }
+ 
+ .layui-layer-style2 .layui-layer-close1{
+ 	background-position: 0 -70px;
+ }
+ 
+ .layui-layer-style2 .layui-layer-content{
  	border-radius: 0 0 4px 4px;
  }
