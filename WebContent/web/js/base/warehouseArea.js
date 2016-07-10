@@ -62,25 +62,21 @@ window.mv = avalon.define({
 	},
 	openEdit: function(){
 		window.editDialog = layer.open({
-			title: '编辑商品信息',
+			title: '编辑库区',
 		    type: 2,
 		    skin: 'layui-layer-style2', //样式类名
-		    area: ['560px','580px'], //宽高
-		    content: 'editProduct.html'
+		    area: ['360px','200px'], //宽高
+		    content: 'editWarehouseArea.html'
 		});
 	},
 	openDelete: function(){
-		layer.confirm('确定要删除该商品吗？', {
+		layer.confirm('确定要删除该库区吗？', {
 			title: '提示',
 			skin: 'layui-layer-style2',
 		    btn: ['确定','取消'] //按钮
 		}, function(){
 			clds_layer.msg("删除成功！", "info");
 		});
-	},
-	changeDialog: function(t) {
-		$("#subFrame").attr("src", "demo2.html");
-		mv.showDialog = t;
 	}
 });
 avalon.scan();

@@ -87,10 +87,6 @@ window.mv = avalon.define({
 		}, function(){
 			clds_layer.msg("删除成功！", "info");
 		});
-	},
-	changeDialog: function(t) {
-		$("#subFrame").attr("src", "demo2.html");
-		mv.showDialog = t;
 	}
 });
 avalon.scan();
