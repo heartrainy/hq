@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>选择商品</title>
+<link rel="stylesheet" href="../../../plugin/bootstrap/bootstrap-3.3.5.min.css" />
+<link rel="stylesheet" href="../../../plugin/dataTables/theme/dataTables.bootstrap.min.css" />
+<link rel="stylesheet" href="../../css/index2.css" />
+</head>
+<body>
+<body ms-controller="bodyController">
+
+<div id="content" class="mycontainer">
+
+	<div class="table-tool">
+		商品名称：<input type="text" />
+		<input class="btn btn-danger btn-sm" type="button" value="查询" />&nbsp;
+		<input class="btn btn-default btn-sm" type="button" value="清空" />
+	</div>
+
+	<div class="mycontainer-table">
+		<table id="tableList" class="table table-striped table-bordered" cellspacing="0" width="100%"></table>
+	</div>
+	
+	<div class="form-btn" align="center">
+		<input class="btn btn-danger btn-sm" type="button" value="保存" />
+		<input class="btn btn-default btn-sm" type="button" value="关闭" ms-click="closeDialog" />
+	</div>
+	
+</div>
+
+<script type="text/javascript" src="../../../plugin/jquery/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../plugin/bootstrap/bootstrap-3.3.5.min.js"></script>
+<script type="text/javascript" src="../../../plugin/dataTables/jquery.dataTables-1.10.8.min.js"></script>
+<script type="text/javascript" src="../../../plugin/dataTables/dataTables.bootstrap-1.10.8.min.js"></script>
+<script type="text/javascript" src="../../../plugin/avalon/avalon.js"></script>
+<script type="text/javascript" src="../../js/stock/chooseProduct.js"></script>
+</body>
+</html>

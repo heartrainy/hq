@@ -130,7 +130,7 @@
 	                    <!-- <span class="label label-info">6</span> -->
 	                </a>
 					<ul>
-	                    <li><a class="menu_a" link="sub/demo1.html" stitle="入库管理" tid="6"><i class="icon icon-caret-right"></i>入库管理</a></li>
+	                    <li><a class="menu_a" link="sub/stock/inStorage.html" stitle="入库管理" tid="6"><i class="icon icon-caret-right"></i>入库管理</a></li>
 	                    <li><a class="menu_a" link="${pageContext.request.contextPath}/client/static/gotoJsp?path=/web/sub/party/CMCC01.jsp" stitle="入库明细" tid="7"><i class="icon icon-caret-right"></i>入库明细</a></li>
 	                    <li><a class="menu_a" link="${pageContext.request.contextPath}/client/static/gotoJsp?path=/web/sub/party/CMCU01.jsp" stitle="出库管理" tid="8"><i class="icon icon-caret-right"></i>出库管理</a></li>
 	                    <li><a class="menu_a" link="${pageContext.request.contextPath}/client/static/gotoJsp?path=/web/sub/party/CMCCA01.jsp" stitle="出库明细" tid="9"><i class="icon icon-caret-right"></i>出库明细</a></li>
