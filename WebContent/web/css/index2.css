@@ -58,6 +58,7 @@ body {
 }
 
 .search-text {
+	display: inline-block;
 	color: #5A5A5A;
 }
 
@@ -159,6 +160,10 @@ table .unable-a {
 }
 
 /*¿í¶È¼¯ºÏ*/
+.width60 {
+	width: 60px;
+}
+
 .width200 {
 	width: 200px;
 }

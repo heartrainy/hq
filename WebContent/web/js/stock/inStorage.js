@@ -76,8 +76,8 @@ window.mv = avalon.define({
 	changeDialog: function(t) {
 		if(t == "purchase") {
 			$("#subFrame").attr("src", "purchaseStorage.html");
-		}else if (t == "") {
-			
+		}else if (t == "restore") {
+			$("#subFrame").attr("src", "restoreStorage.html");
 		}
 		
 		if(t == "main") {
@@ -85,7 +85,31 @@ window.mv = avalon.define({
 		}else{
 			mv.showDialog = "sub";
 		}
-		
+	},
+	openView: function(){
+		/*window.viewDialog = layer.open({
+			title: '入库详情',
+		    type: 2,
+		    skin: 'layui-layer-style2', //样式类名
+		    area: ['840px','570px'], //宽高
+		    content: 'viewPurchaseStorage.html'
+		});*/
+		window.viewDialog = layer.open({
+			title: '入库详情',
+		    type: 2,
+		    skin: 'layui-layer-style2', //样式类名
+		    area: ['840px','570px'], //宽高
+		    content: 'viewRestoreStorage.html'
+		});
+	},
+	openDelete: function(){
+		layer.confirm('确定要删除该入库记录吗？', {
+			title: '提示',
+			skin: 'layui-layer-style2',
+		    btn: ['确定','取消'] //按钮
+		}, function(){
+			clds_layer.msg("删除成功！", "info");
+		});
 	}
 });
 avalon.scan();

@@ -3,7 +3,7 @@
 <head>
     <title>华迅达基础业务系统</title>
     <meta charset="UTF-8">
-    <%-- <%@ include file="main/common-meta.jsp" %> --%>
+    <!-- <%@ include file="main/common-meta.jsp" %> -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/theme/red.css" />
 </head>
 <body ms-controller="index">
-	<%-- <input type="hidden" id="base_url" value="${pageContext.request.contextPath}" /> --%>
+	<!-- <input type="hidden" id="base_url" value="${pageContext.request.contextPath}" /> -->
 	
     <!--Header-part-->
     <div id="header">
@@ -35,13 +35,13 @@
                     <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a class="menu_a" link="${pageContext.request.contextPath}/client/static/gotoJsp?path=/web/sub/party/UMPI01.jsp" stitle="个人账户信息"><i class="icon-user" ></i> 个人资料</a></li>
+                    <li><a class="menu_a" link="client/static/gotoJsp?path=/web/sub/party/UMPI01.jsp" stitle="个人账户信息"><i class="icon-user" ></i> 个人资料</a></li>
                     <li class="divider"></li>
                     <!-- 
                     <li><a href="#"><i class="icon-check"></i> 我的任务</a></li>
                     <li class="divider"></li>
                      -->
-                    <li><a href="${pageContext.request.contextPath}/client/party/logout"><i class="icon-key"></i> 退出系统</a></li>
+                    <li><a href="client/party/logout"><i class="icon-key"></i> 退出系统</a></li>
                 </ul>
             </li>
             <!-- 
@@ -64,7 +64,7 @@
             </li>
             <li class=""><a title="" href="#"><i class="icon icon-cog"></i> <span class="text">&nbsp;设置</span></a></li>
              -->
-            <li class=""><a title="" href="${pageContext.request.contextPath}/client/party/logout"><i class="icon icon-share-alt"></i> <span class="text">&nbsp;退出系统</span></a></li>
+            <li class=""><a title="" href="client/party/logout"><i class="icon icon-share-alt"></i> <span class="text">&nbsp;退出系统</span></a></li>
         </ul>
     </div>
     <!--close-top-Header-menu-->
@@ -83,26 +83,26 @@
 	        <!-- <ul ms-with="treeList"> -->
 	        
 	        	<!-- 不包含二级菜单 -->
-	        	<%-- <li ms-if-loop="el.authRes != null" class="submenu">
-	                <a class="menu_a" ms-attr-link="${pageContext.request.contextPath}{{el.authRes.authResAddr}}" ms-attr-stitle="{{el.authRes.authResName}}" ms-attr-tid="{{el.auth.authCode}}"><i class="icon"></i> <span>{{el.authRes.authResName}}</span></a> 
-	            </li> --%>
+	        	<!-- <li ms-if-loop="el.authRes != null" class="submenu">
+	                <a class="menu_a" ms-attr-link="{{el.authRes.authResAddr}}" ms-attr-stitle="{{el.authRes.authResName}}" ms-attr-tid="{{el.auth.authCode}}"><i class="icon"></i> <span>{{el.authRes.authResName}}</span></a> 
+	            </li> -->
 	        	
 	        	<!-- 包含二级菜单 -->
-	        	<%-- <li ms-if-loop="el.authRes == null" class="submenu">
+	        	<!-- <li ms-if-loop="el.authRes == null" class="submenu">
 	        		<a href="#">
 	                    <i class="icon"></i> 
 	                    <span>{{el.auth.authName}}</span> 
 	                </a>
 	                <ul>
-	                    <li ms-repeat-ell="el.child"><a class="menu_a" ms-attr-link="${pageContext.request.contextPath}{{ell.authRes.authResAddr}}" ms-attr-stitle="{{ell.auth.authName}}" ms-attr-tid="{{ell.auth.authCode}}"><i class="icon icon-caret-right"></i>{{ell.auth.authName}}</a></li>
+	                    <li ms-repeat-ell="el.child"><a class="menu_a" ms-attr-link="{{ell.authRes.authResAddr}}" ms-attr-stitle="{{ell.auth.authName}}" ms-attr-tid="{{ell.auth.authCode}}"><i class="icon icon-caret-right"></i>{{ell.auth.authName}}</a></li>
 	                </ul>
-	        	</li> --%>
+	        	</li> -->
 	        	
-	            <%-- 
+	            <!-- 
 	            <li class="submenu active">
-	                <a class="menu_a" link="${pageContext.request.contextPath}/web/home.jsp" stitle="首页"><i class="icon icon-home"></i> <span>主页</span></a> 
+	                <a class="menu_a" link="web/home.jsp" stitle="首页"><i class="icon icon-home"></i> <span>主页</span></a> 
 	            </li>
-	            --%>
+	            -->
 	            <li class="submenu"> 
 	                <a href="#">
 	                    <i class="icon icon-table"></i> 
@@ -110,9 +110,9 @@
 	                    <!-- <span class="label label-info">3</span> -->
 	                </a>
 	                <ul>
-	                    <li><a class="menu_a" link="${pageContext.request.contextPath}/client/static/gotoJsp?path=/web/sub/party/UMOM01.jsp" stitle="客户管理" tid="1"><i class="icon icon-caret-right"></i>客户管理</a></li>
-	                    <li><a class="menu_a" link="${pageContext.request.contextPath}/client/static/gotoJsp?path=/web/sub/party/UMAM01.jsp" stitle="订单信息" tid="2"><i class="icon icon-caret-right"></i>订单信息</a></li>
-	                    <li><a class="menu_a" link="${pageContext.request.contextPath}/client/static/gotoJsp?path=/web/sub/party/UMPI01.jsp" stitle="收款结算" tid="3"><i class="icon icon-caret-right"></i>收款结算</a></li>
+	                    <li><a class="menu_a" link="client/static/gotoJsp?path=/web/sub/party/UMOM01.jsp" stitle="客户管理" tid="1"><i class="icon icon-caret-right"></i>客户管理</a></li>
+	                    <li><a class="menu_a" link="client/static/gotoJsp?path=/web/sub/party/UMAM01.jsp" stitle="订单信息" tid="2"><i class="icon icon-caret-right"></i>订单信息</a></li>
+	                    <li><a class="menu_a" link="client/static/gotoJsp?path=/web/sub/party/UMPI01.jsp" stitle="收款结算" tid="3"><i class="icon icon-caret-right"></i>收款结算</a></li>
 	                </ul>
 	            </li>
 	            <li class="submenu"> 
@@ -134,10 +134,10 @@
 	                </a>
 					<ul>
 	                    <li><a class="menu_a" link="sub/stock/inStorage.html" stitle="入库管理" tid="6"><i class="icon icon-caret-right"></i>入库管理</a></li>
-	                    <li><a class="menu_a" link="${pageContext.request.contextPath}/client/static/gotoJsp?path=/web/sub/party/CMCC01.jsp" stitle="入库明细" tid="7"><i class="icon icon-caret-right"></i>入库明细</a></li>
-	                    <li><a class="menu_a" link="${pageContext.request.contextPath}/client/static/gotoJsp?path=/web/sub/party/CMCU01.jsp" stitle="出库管理" tid="8"><i class="icon icon-caret-right"></i>出库管理</a></li>
-	                    <li><a class="menu_a" link="${pageContext.request.contextPath}/client/static/gotoJsp?path=/web/sub/party/CMCCA01.jsp" stitle="出库明细" tid="9"><i class="icon icon-caret-right"></i>出库明细</a></li>
-						<li><a class="menu_a" link="${pageContext.request.contextPath}/client/static/gotoJsp?path=/web/sub/party/CMCL01.jsp" stitle="库存查询" tid="10"><i class="icon icon-caret-right"></i>库存查询</a></li>
+	                    <li><a class="menu_a" link="sub/stock/detailInStorage.html" stitle="入库明细" tid="7"><i class="icon icon-caret-right"></i>入库明细</a></li>
+	                    <li><a class="menu_a" link="client/static/gotoJsp?path=/web/sub/party/CMCU01.jsp" stitle="出库管理" tid="8"><i class="icon icon-caret-right"></i>出库管理</a></li>
+	                    <li><a class="menu_a" link="client/static/gotoJsp?path=/web/sub/party/CMCCA01.jsp" stitle="出库明细" tid="9"><i class="icon icon-caret-right"></i>出库明细</a></li>
+						<li><a class="menu_a" link="client/static/gotoJsp?path=/web/sub/party/CMCL01.jsp" stitle="库存查询" tid="10"><i class="icon icon-caret-right"></i>库存查询</a></li>
 	                </ul>
 	            </li>
 	        </ul>
@@ -177,7 +177,7 @@
         			<!-- <div class="tab-li" t="1">订单管理1<div class="tab-close"></div></div> -->
         		</div>
         		<div class="tab-center" tid="AUTH001">
-        			<iframe id="iframe_AUTH001" src="${pageContext.request.contextPath}/client/static/gotoJsp?path=/web/home.jsp" frameborder='0' style="width:100%;height:99.6%;"></iframe>
+        			<iframe id="iframe_AUTH001" src="client/static/gotoJsp?path=/web/home.jsp" frameborder='0' style="width:100%;height:99.6%;"></iframe>
         		</div>
         	</div>
         </div>
@@ -196,12 +196,12 @@
       </ul>
     </div>
 
-    <script src="${pageContext.request.contextPath}/plugin/jquery/jquery-1.8.2.min.js"></script>
-    <script src="${pageContext.request.contextPath}/plugin/bootstrap/bootstrap-2.3.0.min.js"></script>
-    <script src="${pageContext.request.contextPath}/plugin/layer/layer.js"></script>
-    <script src="${pageContext.request.contextPath}/plugin/avalon/avalon.js"></script>
+    <script src="../plugin/jquery/jquery-1.8.2.min.js"></script>
+    <script src="../plugin/bootstrap/bootstrap-2.3.0.min.js"></script>
+    <script src="../plugin/layer/layer.js"></script>
+    <script src="../plugin/avalon/avalon.js"></script>
     <!-- 左侧导航 -->
-    <script src="${pageContext.request.contextPath}/web/js/common/index.js"></script> 
+    <script src="js/common/index.js"></script> 
 
 
     <script type="text/javascript">
