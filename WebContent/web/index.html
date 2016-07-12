@@ -1,20 +1,23 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html>
 <head>
     <title>华迅达基础业务系统</title>
-    <%@ include file="main/common-meta.jsp" %>
-    <link type="image/x-icon" href="${pageContext.request.contextPath}/web/img/hbs/favicon.ico" rel="icon">
-	<link type="image/x-icon" href="${pageContext.request.contextPath}/web/img/hbs/favicon.ico" rel="shortcut icon">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/plugin/bootstrap/bootstrap-2.3.0.min.css" />
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/plugin/font-awesome/css/font-awesome.css" />
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/web/css/matrix-style.css" />
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/web/css/matrix-media.css" />
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/web/css/theme/red.css" />
+    <meta charset="UTF-8">
+    <%-- <%@ include file="main/common-meta.jsp" %> --%>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">
+    <link type="image/x-icon" href="img/hbs/favicon.ico" rel="icon">
+	<link type="image/x-icon" href="img/hbs/favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="../plugin/bootstrap/bootstrap-2.3.0.min.css" />
+    <link rel="stylesheet" href="../plugin/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="css/matrix-style.css" />
+    <link rel="stylesheet" href="css/matrix-media.css" />
+    <link rel="stylesheet" href="css/theme/red.css" />
 </head>
 <body ms-controller="index">
-	<input type="hidden" id="base_url"ri value="${pageContext.request.contextPath}" />
+	<%-- <input type="hidden" id="base_url" value="${pageContext.request.contextPath}" /> --%>
 	
     <!--Header-part-->
     <div id="header">
