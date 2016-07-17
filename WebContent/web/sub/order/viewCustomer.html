@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>客户信息详情</title>
+<link rel="stylesheet" href="../../../plugin/bootstrap/bootstrap-3.3.5.min.css" />
+<link rel="stylesheet" href="../../../plugin/datetimepicker/bootstrap-datetimepicker.min.css" />
+<link rel="stylesheet" href="../../../plugin/font-awesome/css/font-awesome.css" />
+<link rel="stylesheet" href="../../../plugin/dataTables/theme/dataTables.bootstrap.min.css" />
+<link rel="stylesheet" href="../../css/index2.css" />
+</head>
+<body ms-controller="bodyController">
+
+<div id="content" class="mycontainer">
+	<!-- 标题 -->
+	<div class="mycontainer-title">
+		<span class="mycontainer-title-icon"><span class="glyphicon glyphicon-signal" aria-hidden="true"></span></span>
+		<span class="mycontainer-title-text">客户信息详情</span>
+		<span class="mycontainer-title-return"><input class="btn btn-default btn-sm" type="button" value="返回" ms-click="returnBack" /></span>
+	</div>
+	
+	<table class="form-table">
+		<tr>
+			<td width="70" align="right"><span>报告人:</span></td>
+			<td><span>张三</span></td>
+			<td width="70" align="right"><span>主管:</span></td>
+			<td><span>李四</td>
+			<td width="70" align="right"><span>入单时间:</span></td>
+			<td><span>2016-05-30</span></td>
+			<td width="70" align="right"><span>进单渠道:</span></td>
+			<td><span>外部拓展</span></td>
+		</tr>
+	</table>
+	
+	<!-- 表单子标题 -->
+	<div class="form-title">
+		<span class="form-title-icon"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span></span>
+		<span class="form-title-text">客户信息</span>
+	</div>
+	
+	<table class="form-table">
+		<tr>
+			<td width="70" align="right"><span>客户名称:</span></td>
+			<td><span>李磊</td>
+			<td width="70" align="right"><span>联系电话:</span></td>
+			<td><span>13900000000</span></td>
+			<td width="70" align="right"><span>QQ:</span></td>
+			<td><span>--</span></td>
+			<td width="70" align="right"><span>微信号:</span></td>
+			<td><span>weixin0001</span></td>
+		</tr>
+		<tr>
+			<td align="right"><span>婚宴日期:</span></td>
+			<td><span>2017-02-12</span></td>
+			<td align="right"><span>婚宴地点:</span></td>
+			<td colspan="3"><span>滨湖区湖滨饭店</span></td>
+			<td align="right"><span>婚礼桌数:</span></td>
+			<td><span>20桌</span></td>
+		</tr>
+	</table>
+	
+	<hr class="myhr" />
+	
+	<table class="form-table">
+		<tr>
+			<td width="70" align="right"><span>客户背景:</span></td>
+			<td><span>--</span></td>
+			<td width="70" align="right"><span>家庭背景:</span></td>
+			<td width="40%"><span>--</span></td>
+		</tr>
+		<tr>
+			<td align="right"><span>教育背景:</span></td>
+			<td><span>女方本科、男方硕士研究生</span></td>
+			<td align="right"><span>特殊喜好:</span></td>
+			<td><span>--</span></td>
+		</tr>
+		<tr>
+			<td align="right"><span>其他信息:</span></td>
+			<td colspan="3">暂无更多信息</span></td>
+		</tr>
+		<tr>
+			<td align="right"><span>生育计划:</span></td>
+			<td colspan="3"><span>暂无更多信息</span></td>
+		</tr>
+	</table>
+	
+	<div class="form-title">
+		<span class="form-title-icon"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span></span>
+		<span class="form-title-text">销售信息</span>
+	</div>
+	
+	<table class="form-table">
+		<tr>
+			<td width="70" align="right"><span>销售团队:</span></td>
+			<td><span>销售团队007</span></td>
+			<td width="70" align="right"><span>大销售:</span></td>
+			<td><span>阿明</span></td>
+			<td width="70" align="right"><span>策划师:</span></td>
+			<td><span>小花</span></td>
+		</tr>
+		<tr>
+			<td align="right"><span class="vertop">婚礼风格:</span></td>
+			<td colspan="5"><span>清新简约</span></td>
+		</tr>
+		<tr>
+			<td colspan="6"><span class="vertop mgl7">衍生产品/销售可行性:</span><span>暂无更多信息</span></td>
+		</tr>
+	</table>
+	
+	<div class="form-title">
+		<span class="form-title-icon"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span></span>
+		<span class="form-title-text">签单情况</span>
+	</div>
+	<table class="form-table">
+		<tr>
+			<td width="70"><span>跟踪状态:</span></td>
+			<td>
+				<span>
+					<select class="form-input">
+						<option value="">请选择</option>
+						<option value="1">未联系</option>
+          				<option value="2">已联系，无意向</option>
+			          	<option value="3">已联系，有意向</option>
+			          	<option value="4">已接单</option>
+			          	<option value="5">已开单</option>
+			          	<option value="6">已统筹</option>
+			          	<option value="7">已完成</option>
+			          	<option value="8">未结算</option>
+			          	<option value="9">已关闭</option>
+					</select>
+				</span>
+			</td>
+			<td width="70" align="right"><span>签单日期:</span></td>
+			<td><span><input id="time" type="text" class="form-input" /></span></td>
+			<td width="70" align="right"><span>签单金额:</span></td>
+			<td><span><input type="text" class="form-input" /></span></td>
+		</tr>
+		<tr>
+			<td width="70" align="right"><span>当前结论:</span></td>
+			<td colspan="5"><span><input type="text" class="form-input wper80" /></span></td>
+		</tr>
+	</table>
+	
+	<div class="form-title">
+		<span class="form-title-icon"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span></span>
+		<span class="form-title-text">跟进日志</span>
+	</div>
+	<table id="tableList" class="table table-striped table-bordered" cellspacing="0" width="100%"></table>
+	
+	<hr class="myhr"/>
+	
+	<div>
+		<input class="btn btn-danger btn-sm" type="button" value="跟进确认" />
+	</div>
+	
+</div>
+
+
+<script type="text/javascript" src="../../../plugin/jquery/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../plugin/bootstrap/bootstrap-3.3.5.min.js"></script>
+<script type="text/javascript" src="../../../plugin/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="../../../plugin/datetimepicker/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+<script type="text/javascript" src="../../../plugin/dataTables/jquery.dataTables-1.10.8.min.js"></script>
+<script type="text/javascript" src="../../../plugin/dataTables/dataTables.bootstrap-1.10.8.min.js"></script>
+<script type="text/javascript" src="../../../plugin/avalon/avalon.js"></script>
+<script type="text/javascript" src="../../js/order/viewCustomer.js"></script>
+</body>
+</html>

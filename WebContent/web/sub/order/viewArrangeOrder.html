@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>统筹单</title>
+<link rel="stylesheet" href="../../../plugin/bootstrap/bootstrap-3.3.5.min.css" />
+<link rel="stylesheet" href="../../../plugin/datetimepicker/bootstrap-datetimepicker.min.css" />
+<link rel="stylesheet" href="../../../plugin/font-awesome/css/font-awesome.css" />
+<link rel="stylesheet" href="../../../plugin/dataTables/theme/dataTables.bootstrap.min.css" />
+<link rel="stylesheet" href="../../css/index2.css" />
+</head>
+<body ms-controller="bodyController">
+
+<div id="content" class="mycontainer">
+	<!-- 标题 -->
+	<div class="mycontainer-title">
+		<span class="mycontainer-title-icon"><span class="glyphicon glyphicon-signal" aria-hidden="true"></span></span>
+		<span class="mycontainer-title-text">统筹单确认</span>
+		<span class="mycontainer-title-return"><input class="btn btn-default btn-sm" type="button" value="返回" ms-click="returnBack" /></span>
+	</div>
+	
+	<table class="form-table">
+		<tr>
+			<td width="70" align="right"><span>报告人:</span></td>
+			<td><span>张三</span></td>
+			<td width="70" align="right"><span>主管:</span></td>
+			<td><span>李四</td>
+			<td width="70" align="right"><span>入单时间:</span></td>
+			<td><span>2016-05-30</span></td>
+			<td width="70" align="right"><span>进单渠道:</span></td>
+			<td><span>外部拓展</span></td>
+		</tr>
+	</table>
+	
+	<!-- 表单子标题 -->
+	<div class="form-title">
+		<span class="form-title-icon"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span></span>
+		<span class="form-title-text">客户信息</span>
+	</div>
+	
+	<table class="form-table">
+		<tr>
+			<td width="70" align="right"><span>客户名称:</span></td>
+			<td><span>李磊</td>
+			<td width="70" align="right"><span>联系电话:</span></td>
+			<td><span>13900000000</span></td>
+			<td width="70" align="right"><span>QQ:</span></td>
+			<td><span>--</span></td>
+			<td width="70" align="right"><span>微信号:</span></td>
+			<td><span>weixin0001</span></td>
+		</tr>
+		<tr>
+			<td align="right"><span>婚宴日期:</span></td>
+			<td><span>2017-02-12</span></td>
+			<td align="right"><span>婚宴地点:</span></td>
+			<td colspan="3"><span>滨湖区湖滨饭店</span></td>
+			<td align="right"><span>婚礼桌数:</span></td>
+			<td><span>20桌</span></td>
+		</tr>
+	</table>
+	
+	<hr class="myhr" />
+	
+	<table class="form-table">
+		<tr>
+			<td width="70" align="right"><span>客户背景:</span></td>
+			<td><span>--</span></td>
+			<td width="70" align="right"><span>家庭背景:</span></td>
+			<td width="40%"><span>--</span></td>
+		</tr>
+		<tr>
+			<td align="right"><span>教育背景:</span></td>
+			<td><span>女方本科、男方硕士研究生</span></td>
+			<td align="right"><span>特殊喜好:</span></td>
+			<td><span>--</span></td>
+		</tr>
+		<tr>
+			<td align="right"><span>其他信息:</span></td>
+			<td colspan="3">暂无更多信息</span></td>
+		</tr>
+		<tr>
+			<td align="right"><span>生育计划:</span></td>
+			<td colspan="3"><span>暂无更多信息</span></td>
+		</tr>
+	</table>
+	
+	<!-- 统筹信息 -->
+	<div class="form-title">
+		<span class="form-title-icon"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span></span>
+		<span class="form-title-text">统筹信息</span>
+	</div>
+	<div class="mycontainer-search-row">
+		<span class="vermid"><input type="checkbox" /></span>
+		<span class="dis-iblock width100">确认司仪</span>
+		<span>司仪:</span>
+		<span><input type="text" class="form-input" /></span>
+		<span class="mgl40">确认时间:</span>
+		<span><input type="text" class="form-input" /></span>
+	</div>
+	<div class="mycontainer-search-row">
+		<span class="vermid"><input type="checkbox" /></span>
+		<span class="dis-iblock width100">确认摄影</span>
+		<span>摄影:</span>
+		<span><input type="text" class="form-input" /></span>
+		<span class="mgl40">确认时间:</span>
+		<span><input type="text" class="form-input" /></span>
+	</div>
+	<div class="mycontainer-search-row">
+		<span class="vermid"><input type="checkbox" /></span>
+		<span class="dis-iblock width100">确认跟妆</span>
+		<span>化妆:</span>
+		<span><input type="text" class="form-input" /></span>
+		<span class="mgl40">确认时间:</span>
+		<span><input type="text" class="form-input" /></span>
+	</div>
+	<div class="mycontainer-search-row">
+		<span class="vermid"><input type="checkbox" /></span>
+		<span class="dis-iblock width100">确认演出</span>
+		<span>节目1:</span>
+		<span><input type="text" class="form-input width400" /></span>
+	</div>
+	<div class="mycontainer-search-row">
+		<span class="vermid"><input type="checkbox" /></span>
+		<span class="dis-iblock width100">婚礼方案或套系</span>
+		<span class="vermid mgl40"><input type="checkbox" /></span>
+		<span class="dis-iblock width200">确认婚礼报价签订服务合同</span>
+		<span class="vermid mgl40"><input type="checkbox" /></span>
+		<span class="dis-iblock width100">婚礼筹备物品表</span>
+	</div>
+	<div class="mycontainer-search-row">
+		<span class="vermid"><input type="checkbox" /></span>
+		<span class="dis-iblock width100">司仪流程</span>
+		<span class="vermid mgl40"><input type="checkbox" /></span>
+		<span class="dis-iblock width200">婚纱照片电子档</span>
+		<span class="vermid mgl40"><input type="checkbox" /></span>
+		<span class="dis-iblock width100">婚礼台型图</span>
+	</div>
+	<div class="mycontainer-search-row">
+		<span class="vermid"><input type="checkbox" /></span>
+		<span class="dis-iblock width100">伴郎伴娘数</span>
+		<span class="mgl40">伴娘数:</span>
+		<span><input type="text" class="form-input" /></span>
+		<span class="mgl40">伴郎数:</span>
+		<span><input type="text" class="form-input" /></span>
+	</div>
+	<div class="mycontainer-search-row">
+		<span class="vermid"><input type="checkbox" /></span>
+		<span class="dis-iblock width100">婚车</span>
+		<span class="mgl40">婚车数:</span>
+		<span><input type="text" class="form-input" /></span>
+	</div>
+	<div class="mycontainer-search-row">
+		<span class="vermid"><input type="checkbox" /></span>
+		<span class="dis-iblock width100">婚礼来宾名单</span>
+	</div>
+	<div class="mycontainer-search-row">
+		<span class="vermid"><input type="checkbox" /></span>
+		<span class="dis-iblock width300">婚礼前最后确认婚礼方案及摆放位置</span>
+		<span class="vermid mgl40"><input type="checkbox" /></span>
+		<span class="dis-iblock">明确进场时间</span>
+	</div>
+	<div class="mycontainer-search-row">
+		<span class="vermid"><input type="checkbox" /></span>
+		<span class="dis-iblock width300">当天确认服务时间</span>
+	</div>
+	<div class="mycontainer-search-row">
+		<span class="vermid"><input type="checkbox" /></span>
+		<span class="dis-iblock width300">白天流程确认</span>
+		<span class="mgl40">行程单:</span>
+		<span><input type="file" class="form-input"  /></span>
+	</div>
+	<div class="mycontainer-search-row">
+		<span class="vermid"><input type="checkbox" /></span>
+		<span class="dis-iblock width300">婚礼倒计时筹备表</span>
+		<span class="vermid mgl40"><input type="checkbox" /></span>
+		<span class="dis-iblock width100">新人logo</span>
+		<span class="vermid mgl40"><input type="checkbox" /></span>
+		<span class="dis-iblock width100">征婚词</span>
+	</div>
+	<div class="mycontainer-search-row">
+		<span>物料清单:</span>
+		<span><input type="file" class="form-input"  /></span>
+		<span class="mgl40">婚礼方案:</span>
+		<span><input type="file" class="form-input"  /></span>
+	</div>
+	
+	<hr class="myhr"/>
+	
+	<div>
+		<input class="btn btn-danger btn-sm" type="button" value="确认" />
+	</div>
+	
+</div>
+
+
+<script type="text/javascript" src="../../../plugin/jquery/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../plugin/bootstrap/bootstrap-3.3.5.min.js"></script>
+<script type="text/javascript" src="../../../plugin/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="../../../plugin/datetimepicker/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+<script type="text/javascript" src="../../../plugin/dataTables/jquery.dataTables-1.10.8.min.js"></script>
+<script type="text/javascript" src="../../../plugin/dataTables/dataTables.bootstrap-1.10.8.min.js"></script>
+<script type="text/javascript" src="../../../plugin/avalon/avalon.js"></script>
+<script type="text/javascript" src="../../js/order/viewArrangeOrder.js"></script>
+</body>
+</html>

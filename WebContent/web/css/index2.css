@@ -152,6 +152,10 @@ table .unable-a {
 	margin-bottom: 5px;
 }
 
+.form-input[type=file] {
+	display: inline;
+}
+
 /*layer修改*/
 .layui-layer-btn .layui-layer-btn0 {
 	background-color: #d9534f !important;
@@ -164,8 +168,20 @@ table .unable-a {
 	width: 60px;
 }
 
+.width100 {
+	width: 100px;
+}
+
 .width200 {
 	width: 200px;
+}
+
+.width300 {
+	width: 300px;
+}
+
+.width400 {
+	width: 400px;
 }
 
 .wper60 {
@@ -189,9 +205,17 @@ table .unable-a {
 	margin-left: 20px;
 }
 
+.mgl40 {
+	margin-left: 40px;
+}
+
 /*vertical-align集合*/
 .vertop {
 	vertical-align: top;
+}
+
+.vermid {
+	vertical-align: middle;
 }
 
 /*color集合*/
@@ -199,11 +223,20 @@ table .unable-a {
 	color: red;
 }
 
-/*float*/
+/*float集合*/
 .fl {
 	float: left;
 }
 
 .fr {
 	float: right;
+}
+
+/*display集合*/
+.dis-block {
+	display: block;
+}
+
+.dis-iblock {
+	display: inline-block;
 }

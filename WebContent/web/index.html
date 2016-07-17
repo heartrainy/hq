@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>华迅达基础业务系统</title>
+    <title>婚庆公司业务管理平台</title>
     <meta charset="UTF-8">
     <!-- <%@ include file="main/common-meta.jsp" %> -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -110,14 +110,23 @@
 	                    <!-- <span class="label label-info">3</span> -->
 	                </a>
 	                <ul>
-	                    <li><a class="menu_a" link="client/static/gotoJsp?path=/web/sub/party/UMOM01.jsp" stitle="客户管理" tid="1"><i class="icon icon-caret-right"></i>客户管理</a></li>
-	                    <li><a class="menu_a" link="client/static/gotoJsp?path=/web/sub/party/UMAM01.jsp" stitle="订单信息" tid="2"><i class="icon icon-caret-right"></i>订单信息</a></li>
-	                    <li><a class="menu_a" link="client/static/gotoJsp?path=/web/sub/party/UMPI01.jsp" stitle="收款结算" tid="3"><i class="icon icon-caret-right"></i>收款结算</a></li>
+	                    <li><a class="menu_a" link="sub/order/customer.html" stitle="客户管理" tid="1"><i class="icon icon-caret-right"></i>客户管理</a></li>
+	                    <li><a class="menu_a" link="sub/order/order.html" stitle="订单信息" tid="2"><i class="icon icon-caret-right"></i>订单信息</a></li>
 	                </ul>
 	            </li>
 	            <li class="submenu"> 
 	                <a href="#">
-	                    <i class="icon icon-table"></i> 
+	                	<i class="icon icon-table"></i>
+	                    <span>财务管理</span> 
+	                    <!-- <span class="label label-info">3</span> -->
+	                </a>
+	                <ul>
+	                    <li><a class="menu_a" link="sub/finance/receipt.html" stitle="收款结算" tid="11"><i class="icon icon-caret-right"></i>收款结算</a></li>
+	                </ul>
+	            </li>
+	            <li class="submenu"> 
+	                <a href="#">
+	                	<i class="icon icon-table"></i>
 	                    <span>基础信息</span> 
 	                    <!-- <span class="label label-info">3</span> -->
 	                </a>
@@ -128,16 +137,16 @@
 	            </li>
 	            <li class="submenu">
 					<a href="#">
-	                    <i class="icon icon-th"></i> 
+						<i class="icon icon-table"></i>
 	                    <span>库存管理</span> 
 	                    <!-- <span class="label label-info">6</span> -->
 	                </a>
 					<ul>
 	                    <li><a class="menu_a" link="sub/stock/inStorage.html" stitle="入库管理" tid="6"><i class="icon icon-caret-right"></i>入库管理</a></li>
 	                    <li><a class="menu_a" link="sub/stock/detailInStorage.html" stitle="入库明细" tid="7"><i class="icon icon-caret-right"></i>入库明细</a></li>
-	                    <li><a class="menu_a" link="client/static/gotoJsp?path=/web/sub/party/CMCU01.jsp" stitle="出库管理" tid="8"><i class="icon icon-caret-right"></i>出库管理</a></li>
-	                    <li><a class="menu_a" link="client/static/gotoJsp?path=/web/sub/party/CMCCA01.jsp" stitle="出库明细" tid="9"><i class="icon icon-caret-right"></i>出库明细</a></li>
-						<li><a class="menu_a" link="client/static/gotoJsp?path=/web/sub/party/CMCL01.jsp" stitle="库存查询" tid="10"><i class="icon icon-caret-right"></i>库存查询</a></li>
+	                    <li><a class="menu_a" link="sub/stock/outStorage.html" stitle="出库管理" tid="8"><i class="icon icon-caret-right"></i>出库管理</a></li>
+	                    <li><a class="menu_a" link="sub/stock/detailOutStorage.html" stitle="出库明细" tid="9"><i class="icon icon-caret-right"></i>出库明细</a></li>
+						<li><a class="menu_a" link="sub/stock/stock.html" stitle="库存查询" tid="10"><i class="icon icon-caret-right"></i>库存查询</a></li>
 	                </ul>
 	            </li>
 	        </ul>
