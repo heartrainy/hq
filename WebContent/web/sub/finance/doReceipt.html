@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>收款</title>
+<link rel="stylesheet" href="../../../plugin/bootstrap/bootstrap-3.3.5.min.css" />
+<link rel="stylesheet" href="../../../plugin/datetimepicker/bootstrap-datetimepicker.min.css" />
+<link rel="stylesheet" href="../../../plugin/font-awesome/css/font-awesome.css" />
+<link rel="stylesheet" href="../../../plugin/dataTables/theme/dataTables.bootstrap.min.css" />
+<link rel="stylesheet" href="../../css/index2.css" />
+</head>
+<body ms-controller="bodyController">
+
+<div id="content" class="mycontainer">
+
+	<div class="form-title">
+		<span class="form-title-icon"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span></span>
+		<span class="form-title-text">订单信息</span>
+	</div>
+	<table class="form-table">
+		<tr>
+			<td width="70" align="right"><span>订单编号:</span></td>
+			<td><span>DD2000009900</span></td>
+			<td width="70" align="right"><span>签单日期:</span></td>
+			<td><span>2016-05-30</span></td>
+			<td width="70" align="right"><span></span></td>
+			<td><span></span></td>
+		</tr>
+	</table>
+	
+	<div class="form-title">
+		<span class="form-title-icon"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span></span>
+		<span class="form-title-text">客户信息</span>
+	</div>
+	<table class="form-table">
+		<tr>
+			<td width="70" align="right"><span>客户名称:</span></td>
+			<td><span>李磊</span></td>
+			<td width="70" align="right"><span>联系电话:</span></td>
+			<td><span>1390000000</span></td>
+			<td width="70" align="right"><span>微信号:</span></td>
+			<td><span>weixin0001</span></td>
+		</tr>
+		<tr>
+			<td align="right"><span>婚宴日期:</span></td>
+			<td><span>2017-02-09</span></td>
+			<td align="right"><span>婚宴低点:</span></td>
+			<td><span>滨湖区湖滨饭店</span></td>
+			<td align="right"><span>婚礼桌数:</span></td>
+			<td><span>20桌</span></td>
+		</tr>
+	</table>
+	
+	<div class="form-title">
+		<span class="form-title-icon"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span></span>
+		<span class="form-title-text">收款信息</span>
+	</div>
+	<table class="form-table">
+		<tr>
+			<td width="70" align="right"><span><font class="red">*</font>收款金额:</span></td>
+			<td><span><input type="text" class="form-input" />元</span></td>
+			<td width="70" align="right"><span><font class="red">*</font>收款人:</span></td>
+			<td><span><input type="text" class="form-input" /></span></td>
+		</tr>
+		<tr>
+			<td align="right"><span>备注:</span></td>
+			<td colspan="3"><span><input type="text" class="form-input wper80" /></span></td>
+		</tr>
+		<tr>
+			<td align="right"><span>收款状态:</span></td>
+			<td colspan="3">
+				<div class="mycontainer-search-row">
+					<span class="vermid"><input type="radio" name="status"></span>
+					<span class="dis-iblock width60">回款中</span>&nbsp;&nbsp;&nbsp;
+					<span class="vermid"><input type="radio" name="status"></span>
+					<span class="dis-iblock">已收讫</span>
+				</div>
+			</td>
+		</tr>
+	</table>
+	
+	<div class="form-btn" align="center">
+		<input class="btn btn-danger btn-sm" type="button" value="确定" />&nbsp;
+		<input class="btn btn-default btn-sm" type="button" value="关闭" ms-click="closeDialog" />
+	</div>
+
+<script type="text/javascript" src="../../../plugin/jquery/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../../plugin/bootstrap/bootstrap-3.3.5.min.js"></script>
+<script type="text/javascript" src="../../../plugin/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="../../../plugin/datetimepicker/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+<script type="text/javascript" src="../../../plugin/dataTables/jquery.dataTables-1.10.8.min.js"></script>
+<script type="text/javascript" src="../../../plugin/dataTables/dataTables.bootstrap-1.10.8.min.js"></script>
+<script type="text/javascript" src="../../../plugin/layer/layer.js"></script>
+<script type="text/javascript" src="../../js/common/clds.layer.js"></script>
+<script type="text/javascript" src="../../../plugin/avalon/avalon.js"></script>
+<script type="text/javascript" src="../../js/finance/doReceipt.js"></script>
+</body>
+</html>
